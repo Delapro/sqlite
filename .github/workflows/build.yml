@@ -1,13 +1,14 @@
 name: Build and publish
 
 on:
-    push:
-        tags:
-            - "*"
-
+  #  push:
+  #      tags:
+  #          - "*"
+  workflow_dispatch:
+  
 env:
     SQLITE_RELEASE_YEAR: "2022"
-    SQLITE_VERSION: "3390300"
+    SQLITE_VERSION: "3390400"
 
 jobs:
     download-sources:
